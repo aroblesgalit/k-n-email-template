@@ -17,83 +17,185 @@
             background-color: #f2f2f2;
             font-family: 'Montserrat', sans-serif;
         }
-        table {
-            border-spacing: 0;
-            background-color: #fff;
-            width: 100%;
-            /* height: 100vh; */
-            max-width: 650px;
-            margin: 0 auto 40px auto;
-        }
+
         td {
             padding: 0;
         }
+
         ul li {
             padding: 0 0 4px 1px;
             text-indent: 1px;
         }
+
         ul li:before {
             content: "✕";
             padding-right: 10px;
             color: #D70000;
         }
+
+        .hero-wrapper {
+            height: 300px;
+            background-image: url('https://res-1.cloudinary.com/knfilters-com/image/upload/c_lpad,dpr_2.0,f_auto,q_auto/v1/media/wysiwyg/home-air-filters/installingfilter2.png');
+            background-size: cover;
+            text-align: center;
+            color: #fff;
+        }
+
+        .sub-section-2 {
+            display: grid;
+            grid-template: 50% 50% / 60% auto;
+            grid-gap: 0 20px;
+            background-color: #A9C462;
+            color: #fff;
+            padding: 40px;
+        }
+
+        .sub-section-2 div:first-child {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        .sub-section-2 div:nth-child(2) {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .sub-section-2 div:last-child {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        @media only screen and (max-width: 650px) {
+            .hero-wrapper {
+                height: auto;
+            }
+
+            .hero {
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+
+            .sub-section-1 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .sub-section-2 {
+                grid-template: auto auto auto / 100%;
+                padding-top: 20px;
+            }
+
+            .sub-section-2 div:first-child {
+                grid-column: 1 / 2;
+                grid-row: 2 / 3;
+            }
+
+            .sub-section-2 div:nth-child(2) {
+                grid-column: 1 / 2;
+                grid-row: 1 / 2;
+                align-items: center;
+            }
+
+            .sub-section-2 div:last-child {
+                grid-column: 1 / 2;
+                grid-row: 3 / 4;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div style="display:none; font-size:1px; color:#fff; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">Preheader</div>
-    <table>
+    <div
+        style="display:none; font-size:1px; color:#fff; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
+        K&N - Breathe pure, Breate safe</div>
+    <table style="border-spacing:0; background-color:#fff; width:100%; max-width:650px; margin:0 auto 40px auto;">
         <tr>
             <td style="padding:10px; text-align: center;">
                 <a class="logo" href="https://www.knfilters.com/home-air-filters">
-                    <img style="width:100px" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/K%26N_Plain_Logo.svg/1200px-K%26N_Plain_Logo.svg.png"
+                    <img style="width:100px"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/K%26N_Plain_Logo.svg/1200px-K%26N_Plain_Logo.svg.png"
                         alt="K&N logo" />
                 </a>
             </td>
         </tr>
         <tr>
-            <td style="height:300px; background-image:url('https://res-1.cloudinary.com/knfilters-com/image/upload/c_lpad,dpr_2.0,f_auto,q_auto/v1/media/wysiwyg/home-air-filters/installingfilter2.png'); background-size:cover; text-align:center; color:#fff;">
-                <div style="height:100%; width:100%; background-color:rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:center; align-items:center;">
-                    <p style="font-weight:900; font-size:56px; margin:0; text-transform:uppercase;">
-                        Breathe Pure,
-                        <br />
-                        Breathe Safe
-                    </p>
-                    <p style="font-size:14px; margin:10px 0 24px 0;"><strong>Free</strong> fast Shipping on all Home Air filters*</p>
-                    <a style="text-decoration:none; color:#fff; text-transform:uppercase; font-size:14px; font-weight:600; border-radius:2px; padding:14px 16px; background-color:#A9C462;" href="https://www.knfilters.com/home-air-filters">Shop Now</a>
+            <td>
+                <div class="hero-wrapper">
+                    <div class="hero"
+                        style="height:100%; width:100%; background-color:rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                        <p style="font-weight:900; font-size:56px; margin:0; text-transform:uppercase;">
+                            Breathe Pure,<br />
+                            Breathe Safe
+                        </p>
+                        <p style="font-size:14px; margin:10px 0 24px 0;"><strong>Free</strong> fast Shipping on all Home
+                            Air filters*</p>
+                        <a style="text-decoration:none; color:#fff; text-transform:uppercase; font-size:14px; font-weight:600; border-radius:2px; padding:14px 16px; background-color:#A9C462;"
+                            href="https://www.knfilters.com/home-air-filters">Shop Now</a>
+                    </div>
                 </div>
             </td>
         </tr>
         <tr>
-            <td style="display:flex; padding:40px;">
-                <div style="flex:1">
-                    <p style="font-size:28px; font-weight:900;">Engineered for exceptional capture of:</p>
-                    <ul style="list-style:none; margin-left:0; padding-left:0;">
-                        <li>Viruses</li>
-                        <li>Bacteria</li>
-                        <li>Mold spores</li>
-                        <li>Dust and dust mites</li>
-                    </ul>
-                </div>
-                <div style="flex:1">
-                    <img style="width:100%" src="https://www.knfilters.com/media/wysiwyg/home-air-filters/capture.png" alt="Home air filter capturing pollen, dust, germs, allergens." />
+            <td>
+                <div class="sub-section-1" style="display:flex; padding:40px;">
+                    <div style="flex:1">
+                        <p style="font-size:28px; font-weight:900;">Engineered for exceptional capture of:</p>
+                        <ul style="list-style:none; margin-left:0; padding-left:0;">
+                            <li>Viruses</li>
+                            <li>Bacteria</li>
+                            <li>Mold spores</li>
+                            <li>Dust and dust mites</li>
+                        </ul>
+                    </div>
+                    <div style="flex:1">
+                        <img style="width:100%; max-width:300px;"
+                            src="https://www.knfilters.com/media/wysiwyg/home-air-filters/capture.png"
+                            alt="Home air filter capturing pollen, dust, germs, allergens." />
+                    </div>
                 </div>
             </td>
         </tr>
         <tr>
-            <td style="display:grid; grid-template: 50% 50% / 60% auto; grid-gap:0 20px; background-color:#A9C462; color:#fff; padding:40px;">
-                <div style="grid-column:1 / 2; grid-row:1 / 3; text-align:center;">
-                    <p style="font-family:'Passion One', cursive; font-size:100px; height:60px; margin:0;">"</p>
-                    <p>The cost of the filter pays for itself in the first year. Installation was very easy.</p>
-                    <p style="font-size:14px; font-weight:900; margin:0;">T.E.</p>
-                    <p style="font-size:12px; margin:6px 0;">Virginia</p>
+            <td>
+                <div class="sub-section-2">
+                    <div style="text-align:center;">
+                        <p style="font-family:'Passion One', cursive; font-size:100px; height:60px; margin:0;">"</p>
+                        <p>The cost of the filter pays for itself in the first year. Installation was very easy.</p>
+                        <p style="font-size:14px; font-weight:900; margin:0;">T.E.</p>
+                        <p style="font-size:12px; margin:6px 0;">Virginia</p>
+                    </div>
+                    <div>
+                        <p style="font-size:28px; font-weight:900;">BUILT to Last</p>
+                    </div>
+                    <div>
+                        <a style="text-decoration:none; color:#A9C462; text-transform:uppercase; font-size:14px; font-weight:600; border-radius:2px; padding:14px 16px; background-color:#fff;"
+                            href="https://www.knfilters.com/home-air-filters">Shop Now</a>
+                    </div>
                 </div>
-                <div style="grid-column:2 / 3; grid-row:1 / 2; display:flex; justify-content:center; align-items:flex-end;">
-                    <p style="font-size:28px; font-weight:900;">BUILT to Last</p>
-                </div>
-                <div style="grid-column:2 / 3; grid-row:2 / 3; display:flex; justify-content:center; align-items:flex-start;">
-                    <a style="text-decoration:none; color:#A9C462; text-transform:uppercase; font-size:14px; font-weight:600; border-radius:2px; padding:14px 16px; background-color:#fff;" href="https://www.knfilters.com/home-air-filters">Shop Now</a>
-                </div>
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:center; padding:40px; font-size:12px;">
+                <a class="logo" href="https://www.knfilters.com/home-air-filters">
+                    <img style="width:100px"
+                        src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/K%26N_Plain_Logo.svg/1200px-K%26N_Plain_Logo.svg.png"
+                        alt="K&N logo" />
+                </a>
+                <address style="padding:10px 0 0 0; line-height:2; font-style:normal;">
+                    K&N Engineering, Inc.<br />
+                    1455 Citrus St., Riverside, California 92507<br />
+                    <a style="text-decoration:none;" href="mailto:tech@knfilters.com">tech@knfilters.com</a><br />
+                    <a style="text-decoration:none;" href="tel:1-800-858-3333">1-800-858-3333</a><br />
+                    <a style="text-decoration:none; text-transform:uppercase; font-size:10px;" href="#">Unsubscribe</a>
+                </address>
             </td>
         </tr>
     </table>
